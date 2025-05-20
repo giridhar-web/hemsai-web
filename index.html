@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tournament Registration Portal for Players, Organizers, and Officials" />
+    <meta name="keywords" content="tournament, registration, sports, organizer, player, official" />
+    <meta name="author" content="Giridhar" />
+    <title>Tournament Registration Portal</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Tournament Registration Portal">
+    <meta property="og:description" content="Register as a player, organizer, or official in tournaments." />
+    <meta property="og:image" content="path_to_image.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com/tournament-registration" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <style>
+        /* Apply background image to the whole body with overlay */
+        html,body{height:100%;margin:0;font-family:'Segoe UI',sans-serif;background:url(./images/1.jpg) no-repeat center center/cover;background-size:cover;background-attachment:fixed;display:flex;flex-direction:column;color:#fff}body::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgb(0 0 0 / .5);z-index:1}header{background-color:rgb(0 0 0 / .7);padding:50px 0;text-align:center;color:#fff;z-index:2}main{flex:1;display:flex;justify-content:center;align-items:center;z-index:2;position:relative}.card{background:rgb(255 255 255 / .1);border-radius:20px;border:1px solid rgb(255 255 255 / .2);backdrop-filter:blur(10px);box-shadow:0 8px 32px rgb(0 0 0 / .2);transition:transform 0.6s ease,box-shadow 0.6s ease;z-index:2;padding:2rem}.card:hover{transform:perspective(1000px) rotateY(3deg) scale(1.05);box-shadow:0 20px 40px rgb(0 0 0 / .4)}.btn{border-radius:25px;font-weight:600;transition:background-color 0.3s ease,transform 0.3s ease}.btn:hover{transform:translateY(-5px)}.btn-primary:hover{background-color:#0056b3}.btn-success:hover{background-color:#218838}.btn-warning:hover{background-color:#e0a800}footer{background-color:rgb(0 0 0 / .7);text-align:center;padding:20px 0;z-index:2;color:#fff}h1,.lead{animation:fadeInDown 1s ease-out;z-index:2;position:relative}@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}@media (max-width:768px){.card{margin-bottom:20px}}@media (max-width:576px){.card-body{padding:1rem}h1{font-size:1.75rem}.lead{font-size:1rem}.btn{width:100%;padding:.75rem}}
+    </style>
+</head>
+<body>
+
+    <header class="text-white shadow">
+        <h1>Tournament Registration System</h1>
+        <p class="lead">Player | Organizer | Official</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <!-- Player Registration Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-white p-4" data-aos="zoom-in" data-tilt>
+                    <div class="card-body">
+                        <h5 class="card-title">Player Registration</h5>
+                        <p class="card-text">Register as a player by providing Aadhaar details, contact info, and selecting your sport.</p>
+                        <a href="player.html" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizer Registration Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-white p-4" data-aos="zoom-in" data-aos-delay="200" data-tilt>
+                    <div class="card-body">
+                        <h5 class="card-title">Organizer Registration</h5>
+                        <p class="card-text">Create and manage tournaments, define categories, dates, and assign officials.</p>
+                        <a href="./organiser.html" class="btn btn-success">Create Tournament</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Official Registration Card -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow text-white p-4" data-aos="zoom-in" data-aos-delay="400" data-tilt>
+                    <div class="card-body">
+                        <h5 class="card-title">Official Registration</h5>
+                        <p class="card-text">Register as a tournament official with role, sport, and ID generation.</p>
+                        <a href="official.html" class="btn btn-warning">Register Official</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-3 mt-auto">
+        <p>&copy; 2025 Tournament Portal | Made by Giridhar</p>
+    </footer>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 15,
+            speed: 500,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
+</body>
+</html>
