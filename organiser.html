@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register as an official tournament organizer. Manage teams, set eligibility, and more!" />
+  <meta name="keywords" content="tournament, organizer registration, sports, event management" />
+  <meta name="author" content="Giridhar" />
+  <meta property="og:title" content="Organizer Registration | Tournament Portal" />
+  <meta property="og:description" content="Easily register your tournament, manage teams and participants." />
+  <meta property="og:image" content="image-url.jpg" />
+  <meta property="og:url" content="https://www.tournamentportal.com/organizer-registration" />
+  <link rel="canonical" href="https://www.tournamentportal.com/organizer-registration" />
+  <title>Organizer Registration | Tournament Portal</title>
+
+  <style>
+    /* General Styles */
+    body{margin:0;font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#34495e,#2c3e50);color:#fff;display:flex;flex-direction:column;min-height:100vh}header,footer{background:rgb(0 0 0 / .8);text-align:center;padding:1.5rem}h1{font-size:2.5rem;margin-bottom:.5rem}main{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem}.form-container{background:#fff;color:#333;border-radius:15px;padding:2rem 2.5rem;box-shadow:0 10px 30px rgb(0 0 0 / .2);width:100%;max-width:700px;transition:transform 0.3s ease}.form-container:hover{transform:scale(1.01)}label{display:block;font-weight:600;margin:1rem 0 .5rem}input,textarea,select{width:100%;padding:.8rem;margin-bottom:1rem;border-radius:8px;border:1px solid #ccc;font-size:1rem;background:#f5f5f5}textarea{resize:vertical}button{width:100%;padding:.9rem;background:#2980b9;color:#fff;font-weight:700;font-size:1.1rem;border:none;border-radius:8px;cursor:pointer;transition:background 0.3s ease}button:hover{background:#1abc9c}footer{font-size:.9rem;margin-top:30px}@media (max-width:600px){h1{font-size:2rem}.form-container{padding:1.5rem}input,select,textarea{font-size:.9rem}button{font-size:1rem}label{font-size:.9rem}}@media (max-width:768px){h1{font-size:2.2rem}.form-container{padding:2rem}}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Organizer Registration</h1>
+    <p>Create and manage your tournaments effortlessly.</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form action="#" method="POST" id="organizerForm">
+        <label for="tournament-name">Tournament Name</label>
+        <input type="text" id="tournament-name" name="tournament-name" required />
+
+        <label for="tournament-dates">Tournament Dates</label>
+        <input type="text" id="tournament-dates" name="tournament-dates" placeholder="e.g. June 1 - June 5, 2025" required />
+
+        <label for="sports-category">Sports Category</label>
+        <input type="text" id="sports-category" name="sports-category" required />
+
+        <label for="organizer-name">Organizer Full Name</label>
+        <input type="text" id="organizer-name" name="organizer-name" required />
+
+        <label for="email">Organizer Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Organizer Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Organizer Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="eligibility">Eligibility Criteria</label>
+        <textarea id="eligibility" name="eligibility" rows="2" placeholder="e.g. Under 18, College students, etc."></textarea>
+
+        <label for="gender-category">Age & Gender Category</label>
+        <select id="gender-category" name="gender-category">
+          <option value="boys">Boys</option>
+          <option value="girls">Girls</option>
+          <option value="mixed">Mixed</option>
+          <option value="all">All</option>
+        </select>
+
+        <label for="matches">Number of Matches</label>
+        <input type="number" id="matches" name="matches" required />
+
+        <label for="pool-details">Pool Details (if applicable)</label>
+        <textarea id="pool-details" name="pool-details" rows="2"></textarea>
+
+        <label for="authority">Designated Signing Authority Name</label>
+        <input type="text" id="authority" name="authority" required />
+
+        <label for="contact-authority">Authority Contact Number</label>
+        <input type="tel" id="contact-authority" name="contact-authority" required />
+
+        <label for="password">Set Tournament Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Register Tournament</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tournament Portal | Made by Giridhar</p>
+  </footer>
+
+  <!-- JS for form handling or AJAX -->
+  <script>
+    // Example JS to handle form submission
+    document.getElementById('organizerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Tournament registered successfully!');
+      // Here you can send form data to the server using AJAX
+    });
+  </script>
+</body>
+</html>

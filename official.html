@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Official Registration | Tournament Portal</title>
+  <meta name="description" content="Register as an official for the tournament">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <style>
+    body{background:linear-gradient(135deg,#2b5876,#4e4376);color:#fff;font-family:'Segoe UI',sans-serif;padding-top:50px}.container{max-width:800px}.form-control,.form-select{border-radius:10px}.form-label{font-weight:600}.form-section{background:#fff;padding:30px;border-radius:20px;box-shadow:0 8px 24px rgb(0 0 0 / .2);color:#333}footer{background-color:rgb(0 0 0 / .85);color:#fff;padding:15px 0;text-align:center;margin-top:50px}
+  </style>
+</head>
+<body>
+
+  <div class="container form-section shadow" data-aos="fade-up">
+    <h2 class="text-center mb-4">Official Registration</h2>
+
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="designation" class="form-label">Designation</label>
+        <input type="text" id="designation" class="form-control" placeholder="e.g., Referee, Umpire" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="sport" class="form-label">Sports Category</label>
+        <select id="sport" class="form-select" required>
+          <option value="">-- Select Sport --</option>
+          <option>Football</option>
+          <option>Cricket</option>
+          <option>Basketball</option>
+          <option>Volleyball</option>
+          <option>Badminton</option>
+          <option>Others</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID</label>
+        <input type="email" id="email" class="form-control" placeholder="example@example.com" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" id="phone" class="form-control" pattern="[0-9]{10}" placeholder="10-digit number" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Payment Mode</label>
+        <select class="form-select" required>
+          <option value="">-- Select Payment Mode --</option>
+          <option>UPI</option>
+          <option>Net Banking</option>
+          <option>Credit/Debit Card</option>
+          <option>Cash</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Upload Photo ID (optional)</label>
+        <input type="file" class="form-control" />
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-warning px-4 py-2">Submit Registration</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tournament Portal | Made by Giridhar</p>
+  </footer>
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
